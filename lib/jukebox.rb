@@ -29,7 +29,7 @@ def play(songs)
   user_input = gets.chomp
   if #check user_input
     puts "Playing <songname>"
-  else 
+  else
     puts "Invalid input, please try again"
   end
 end
