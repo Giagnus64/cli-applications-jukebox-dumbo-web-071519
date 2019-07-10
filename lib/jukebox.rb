@@ -18,8 +18,10 @@ def help
   puts "- exit : exits this program"
 end
 
-def play
-  
+def play(array)
+  array.each_with_index { |song, index|
+    puts "#{index}. #{song}"
+  }
 end
 
 def list
