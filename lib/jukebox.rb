@@ -18,16 +18,30 @@ def help
   puts "- exit : exits this program"
 end
 
-def play(array)
+def list(array)
   array.each_with_index { |song, index|
-    puts "#{index}. #{song}"
+    puts "#{index + 1}. #{song}"
   }
 end
 
-def list
-
+def play(songs)
+  puts "Please enter a song name or number:"
+  user_input = gets.chomp
+  if #check user_input
+    puts "Playing <songname>"
+  else 
+    puts "Invalid input, please try again"
+  end
 end
 
-def exit_jukebpox
+def exit_jukebox
+ puts "Goodbye"
+end
 
+def run
+  help
+  until(user_command == "exit")
+    puts "Please enter a command:"
+    user_command = gets.chomp
+  end
 end
