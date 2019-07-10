@@ -42,6 +42,7 @@ end
 
 def run(songs)
   help
+  
   puts "Please enter a command:"
   user_command = gets.chomp
   if user_command == "play"
