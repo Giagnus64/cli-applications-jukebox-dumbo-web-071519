@@ -41,7 +41,6 @@ end
 def run(songs)
   help
   user_command = 0
-  until(user_command == "exit")
     puts "Please enter a command:"
     user_command = gets.chomp
     if user_command == play
@@ -51,5 +50,4 @@ def run(songs)
     elsif user_command == list
       list(songs)
     end
-  end
 end
