@@ -43,5 +43,12 @@ def run
   until(user_command == "exit")
     puts "Please enter a command:"
     user_command = gets.chomp
+    if user_command == play
+      play(songs)
+    elsif user_command == help
+      help
+    elsif user_command == list
+      list(songs)
+    end
   end
 end
