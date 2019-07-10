@@ -42,9 +42,11 @@ def run(songs)
   help
   puts "Please enter a command:"
   user_command = gets.chomp
-  if user_command == help
+  if user_command == "play"
+    play(songs)
+  elsif user_command == "help"
     help
-  elsif user_command == list
+  elsif user_command == "list"
     list(songs)
   end
 end
